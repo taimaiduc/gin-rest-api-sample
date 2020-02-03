@@ -7,10 +7,10 @@ import (
 	"os"
 	"strings"
 
+	"gin-rest-api-sample/database/models"
+	"gin-rest-api-sample/lib/common"
 	jwt "github.com/dgrijalva/jwt-go"
 	"github.com/gin-gonic/gin"
-	"github.com/velopert/gin-rest-api-sample/database/models"
-	"github.com/velopert/gin-rest-api-sample/lib/common"
 )
 
 var secretKey []byte

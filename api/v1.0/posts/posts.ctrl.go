@@ -1,10 +1,10 @@
 package posts
 
 import (
+	"gin-rest-api-sample/database/models"
+	"gin-rest-api-sample/lib/common"
 	"github.com/gin-gonic/gin"
 	"github.com/jinzhu/gorm"
-	"github.com/velopert/gin-rest-api-sample/database/models"
-	"github.com/velopert/gin-rest-api-sample/lib/common"
 )
 
 // Post type alias

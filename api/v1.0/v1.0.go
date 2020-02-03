@@ -1,9 +1,9 @@
 package apiv1
 
 import (
+	"gin-rest-api-sample/api/v1.0/auth"
+	"gin-rest-api-sample/api/v1.0/posts"
 	"github.com/gin-gonic/gin"
-	"github.com/velopert/gin-rest-api-sample/api/v1.0/auth"
-	"github.com/velopert/gin-rest-api-sample/api/v1.0/posts"
 )
 
 func ping(c *gin.Context) {

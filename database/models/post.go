@@ -1,8 +1,8 @@
 package models
 
 import (
+	"gin-rest-api-sample/lib/common"
 	"github.com/jinzhu/gorm"
-	"github.com/velopert/gin-rest-api-sample/lib/common"
 )
 
 // Post data model
