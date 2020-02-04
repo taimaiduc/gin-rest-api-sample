@@ -1,29 +1,30 @@
 package models
 
 import (
-	"gin-rest-api-sample/lib/common"
-	"github.com/jinzhu/gorm"
+    "github.com/jinzhu/gorm"
+    
+    "gin-rest-api-sample/lib/common"
 )
 
 // User data model
 type User struct {
-	gorm.Model
-	Username     string
-	DisplayName  string
-	PasswordHash string
+    gorm.Model
+    Username     string
+    DisplayName  string
+    PasswordHash string
 }
 
 // Serialize serializes user data
 func (u *User) Serialize() common.JSON {
-	return common.JSON{
-		"id":           u.ID,
-		"username":     u.Username,
-		"display_name": u.DisplayName,
-	}
+    return common.JSON{
+        "id":           u.ID,
+        "username":     u.Username,
+        "display_name": u.DisplayName,
+    }
 }
 
 func (u *User) Read(m common.JSON) {
-	u.ID = uint(m["id"].(float64))
-	u.Username = m["username"].(string)
-	u.DisplayName = m["display_name"].(string)
+    u.ID = uint(m["id"].(float64))
+    u.Username = m["username"].(string)
+    u.DisplayName = m["display_name"].(string)
 }

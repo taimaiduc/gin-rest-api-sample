@@ -2,12 +2,13 @@ package main
 
 import (
 	"os"
-
+	
+	"github.com/gin-gonic/gin"
+	"github.com/joho/godotenv"
+	
 	"gin-rest-api-sample/api"
 	"gin-rest-api-sample/database"
 	"gin-rest-api-sample/lib/middlewares"
-	"github.com/gin-gonic/gin"
-	"github.com/joho/godotenv"
 )
 
 func main() {
